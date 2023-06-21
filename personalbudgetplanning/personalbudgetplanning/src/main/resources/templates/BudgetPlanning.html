@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Budget Planning</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+                crossorigin="anonymous"/>
+        <style>
+            body{
+                text-align: center;
+                border: 3px solid white;
+                margin-top: 15%;
+                margin-left: 30vw;
+                width: 40vw;
+                height: 50vh;
+                padding: 2%;
+            }
+
+            .input:submit{
+                height: 7vh;
+                width: 10vw;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:crimson; ">
+        <h3 style="color: white; font-weight: 800; background-color: black;">Personal Budget Planning</h3>
+        <br>
+        <div>
+            
+            <div>
+                <form th:action="@{/budget/planning}" method="POST">
+                    <table>
+                        <tr>
+                            <td><label style="color: white; margin-left: 10vw;" for="UserName">Username:</label></td>
+                            <td><input type="text" id="UserName" name="UserName" required></td>
+                        </tr>
+                        <tr>
+                            <td><label style="color: white; margin-left: 10vw;" for="Age">Age:</label></td>
+                            <td><input type="number" id="Age" name="Age" required></td>
+                        </tr>
+                        <tr>
+                            <td><label style="color: white; margin-left: 10vw;" for="AnnualSalary">Annual Salary:</label></td>
+                            <td><input type="number" id="AnnualSalary" name="AnnualSalary" required></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input style="width: 7vw; height: 5vh; background-color: #5e9d5e; border-radius: 15%;" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        
+    </body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+Ibb"></script>

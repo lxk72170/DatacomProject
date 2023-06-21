@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/
+    username: "root"
+    password: "Projectk"
+    driver-class-name: com.mysql.jdbc.Driver
+  freemarker:
+    enabled: true
+  thymeleaf:
+    enabled: true
+
+spring.mvc.view.prefix: '/templates/'
+spring.mvc.view.suffix: .html

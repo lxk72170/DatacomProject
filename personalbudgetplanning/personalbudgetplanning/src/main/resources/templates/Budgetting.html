@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body >
+<div class="container" >
+  <div class="center" style="width:970px;margin:70px;padding:20px;">
+    <h1>
+      .
+    </h1>
+    <h1 style="text-align:center; color:white; text-shadow: 2px 2px 0px gray;">Budgeting System</h1>
+    <br>
+
+    <center>
+      <form th:action="@{/budget/calculateBudget}" method="get" id="calculateBudget">
+        <button style="width:200px;margin-top:-5px" type="submit" class="btn btn-primary">Start Planning</button>
+      </form>
+      <br>
+    </center>
+  </div>
+</div>
+</body>
